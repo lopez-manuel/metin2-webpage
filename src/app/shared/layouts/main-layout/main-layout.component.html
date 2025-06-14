@@ -1,0 +1,32 @@
+
+
+
+<app-navbar></app-navbar>
+
+<app-background></app-background>
+
+<div style="width: 100%;">
+
+    <div style="margin-top: 500px; display: flex; flex-direction: row; justify-content: space-between;">
+        
+        <app-left-sidebar></app-left-sidebar>
+        
+        <div class="main-page" style="width: 1100px; min-height: 100vh; border: 1px solid #535353; box-shadow: #111111 0px 0px 32px; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 24px;">
+
+            <h1>Page content</h1>
+
+            <router-outlet></router-outlet>
+    
+            <div style="width: 100%; display: flex; flex-wrap: wrap; gap: 24px;">
+            
+            </div>
+   
+        </div>
+
+        <app-right-sidebar></app-right-sidebar>
+        
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

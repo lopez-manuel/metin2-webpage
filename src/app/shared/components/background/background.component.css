@@ -1,0 +1,65 @@
+
+
+/*Begin particles code*/
+ .particle-container {
+  position: absolute;
+  bottom: 40vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 400px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #f39c12 0%, #e74c3c 80%);
+  border-radius: 50%;
+  animation: rise 3s linear infinite;
+  animation-delay: calc(var(--i) * -0.5s);
+  left: calc(var(--i) * 12%);
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scale(1.4);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-600px) scale(0.6);
+    opacity: 0;
+  }
+}
+/*End particles code*/
+
+/*Begin video background code */
+
+.video-container {
+  position: absolute;
+  height: 100vh;
+  z-index: -20;
+  opacity: 0.3;
+}
+
+.video-container video {
+  position: relative;
+  top: 35vh;
+  right: -50vw;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*End video background code*/
