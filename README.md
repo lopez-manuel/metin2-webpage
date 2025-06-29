@@ -13,4 +13,4 @@ This project started as a personal initiative to:
 
 ## 🔖 License
 This project is personal and for educational purpose.
-Feel free to clone this and using in your own or personal project, no attribution required, but always appreciated.
+Feel free to clone this and using in your own or personal project, no attribution required, but always appreciated. 
