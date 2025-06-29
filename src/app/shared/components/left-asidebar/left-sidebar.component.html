@@ -3,7 +3,7 @@
 
 <aside class="w-[90vw] lg:w-[100vw] 2xl:w-80 h-fit flex flex-col lg:flex-row 2xl:flex-col lg:justify-center gap-10">
   
-    <app-aside-list [rankingData]="data" rankType="PLAYER"></app-aside-list>
-    <app-aside-list [rankingData]="guilds" rankType="GUILD"></app-aside-list>
+    <app-aside-list [rankingData]="playerRanking()" rankType="PLAYER"></app-aside-list>
+    <app-aside-list [rankingData]="guildRanking()" rankType="GUILD"></app-aside-list>
   
 </aside>
